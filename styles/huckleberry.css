@@ -54,8 +54,12 @@ main {
       padding: 0 1em;
       border-bottom: 8px solid gray;
       position: relative;
+      display: grid;
+
       @media screen and (min-width: 1001px) {
         width: 100vw;
+        display: flex;
+        justify-content: center;
       }
 
       .fa-house {
@@ -63,7 +67,7 @@ main {
         cursor: pointer;
         color: #555555;
         position: absolute;
-        transform: translate(16rem, 1rem);
+        transform: translate(15rem, 1rem);
         /*  tablet  */
         @media screen and (min-width: 600px) {
           transform: translate(25rem, 4.5rem);
@@ -72,44 +76,42 @@ main {
       /*  laptop  */
       @media screen and (min-width: 1001px) {
         .fa-house {
-          transform: translate(55rem, 4.5rem);
+          transform: translate(35rem, 4.5rem);
         }
       }
 
-      & h1 {
-        font-size: 1.5em;
-        padding: 3em 0 0;
-        font-weight: 800;
+      #h1-header-section {
+        /*  */
         @media screen and (min-width: 1001px) {
-          margin-left: 14.5rem;
+          width: 55%;
         }
-      }
 
-      .hp1 {
-        font-size: 0.9em;
-        font-weight: 400;
-        padding: 2em 0 0;
-        line-height: 1.4em;
-        color: #555555;
-        width: 280px;
-        @media screen and (min-width: 1001px) {
-          margin-left: 14.5rem;
+        & h1 {
+          font-size: 1.5em;
+          padding: 3em 0 0;
+          font-weight: 800;
         }
-      }
 
-      & span {
-        color: #009966;
-      }
+        .header-p1 {
+          font-size: 0.9em;
+          font-weight: 400;
+          padding: 2em 0 0;
+          line-height: 1.4em;
+          color: #555555;
+          width: 280px;
+        }
 
-      .hp2 {
-        font-size: 0.9em;
-        font-weight: 400;
-        padding: 1em 0 2em;
-        line-height: 1.4em;
-        color: #555555;
-        width: 250px;
-        @media screen and (min-width: 1001px) {
-          margin-left: 14.5rem;
+        & span {
+          color: #009966;
+        }
+
+        .header-p2 {
+          font-size: 0.9em;
+          font-weight: 400;
+          padding: 1em 0 2em;
+          line-height: 1.4em;
+          color: #555555;
+          width: 250px;
         }
       }
     }
