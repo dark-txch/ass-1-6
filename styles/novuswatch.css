@@ -1,0 +1,114 @@
+/* -- general base css START -- */
+
+:root {
+  --base: 1.35;
+}
+
+html {
+  font-size: 1rem;
+}
+
+/*  asterics  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* -- general base css END -- */
+
+/*  */
+
+/* -- -------------This project starts with a mobile workflow -- */
+
+main {
+  background-color: #a7a8cd;
+  width: 100vw;
+  height: 100vh;
+
+  /*  tablet  */
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*   */
+
+  article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*  tablet  */
+    @media screen and (min-width: 600px) {
+      height: 90vh;
+    }
+
+    .image {
+      height: 60vh;
+      width: 100%;
+      position: relative;
+
+      & img {
+        height: 100%;
+        width: 100%;
+        @media screen and (min-width: 600px) {
+          width: 24rem;
+        }
+      }
+
+      & span {
+        position: absolute;
+        top: 8px;
+        left: -10px;
+        background-color: #f0f092;
+        padding: 0.5em 1em 0.5em 0.7em;
+        font-weight: 900;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 14px;
+        border-top-right-radius: 14px;
+      }
+    }
+
+    .context {
+      height: 40vh;
+      background-color: white;
+      padding: 0 0.8rem;
+      /* height: 100%; */
+      position: relative;
+
+      @media screen and (min-width: 600px) {
+        width: 24rem;
+      }
+
+      #home {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transform: translate(15rem, 1.5rem);
+        position: absolute;
+        @media screen and (min-width: 600px) {
+          font-size: 1.3rem;
+          transform: translate(20rem, 1.5rem);
+        }
+      }
+
+      h1 {
+        padding: 1em 0;
+
+        & span {
+          color: #999797;
+          font-size: 0.7em;
+        }
+      }
+
+      & p {
+        font-weight: 400;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

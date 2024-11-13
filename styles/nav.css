@@ -1,0 +1,149 @@
+/* -- general base css START -- */
+
+:root {
+  --base: 1.35;
+}
+
+html {
+  font-size: 1rem;
+}
+
+/*  asterics  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* -- general base css END -- */
+
+/*  */
+
+/* -- -------------This project starts with a mobile workflow -- */
+
+/*  main container  */
+
+main {
+  background: linear-gradient(to bottom, #ff0095, #ffea00);
+  color: #0aefff;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+}
+
+/*  section 1 header  */
+
+/*  header  */
+
+& #header-section {
+  /* height: 30vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    font-size: 2.2rem;
+
+    @media screen and (min-width: 600px) {
+      font-size: 3rem;
+    }
+  }
+
+  & span {
+    font-size: 3rem;
+
+    /*  ----------------MEDIA QUERY FOR TABLET AND LAPTOP */
+
+    @media screen and (min-width: 600px) {
+      font-size: 4rem;
+    }
+  }
+}
+
+/*  header section 1 END */
+
+/*  section 2 navigation  */
+
+#navigation-section {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  /*  */
+
+  & nav {
+    /* let background color change in animation to the colors of each li */
+    text-align: center;
+    flex: 1;
+
+    & ul {
+      list-style-type: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      & li {
+        font-size: 1.7rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /*  give each li a different color based on their link site  */
+        &:nth-child(1) {
+          background: linear-gradient(to right, #ff0095, #f85e00);
+        }
+
+        &:nth-child(2) {
+          background-color: #666666;
+        }
+
+        &:nth-child(3) {
+          background-color: #a7a8cd;
+          & a {
+            color: black;
+          }
+        }
+
+        &:nth-child(4) {
+          background: linear-gradient(to right, white, #00f1d9);
+
+          & a {
+            color: red;
+          }
+        }
+
+        &:nth-child(5) {
+          background-color: #0aefff;
+        }
+
+        &:nth-child(6) {
+          background-color: #0aefff;
+        }
+
+        & a {
+          text-decoration: none;
+          display: block;
+          color: #0aefff;
+        }
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+    }
+  }
+
+  footer {
+    color: black;
+    background-color: yellow;
+    font-weight: 600;
+    text-align: end;
+    padding: 0.3rem 1rem;
+  }
+}
+/*  main end */
