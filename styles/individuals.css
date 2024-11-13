@@ -32,7 +32,7 @@ main {
   height: auto;
   width: 100vw;
   padding: 0 1rem 2rem;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1001px) {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -41,7 +41,7 @@ main {
   /*  ------------------------------------section 1 container _icon/h1/p */
   #section1-wrapper {
     /*   */
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1001px) {
       height: 100vh;
       width: 50%;
       display: flex;
@@ -56,7 +56,7 @@ main {
       justify-content: space-between;
       align-items: center;
       padding: 1rem 0;
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1001px) {
         width: 82%;
       }
 
@@ -65,7 +65,7 @@ main {
         & img {
           width: 3.5rem;
           aspect-ratio: 1;
-          @media screen and (min-width: 600px) {
+          @media screen and (min-width: 1001px) {
             width: 4rem;
           }
         }
@@ -75,7 +75,7 @@ main {
         font-size: 2rem;
         color: #2dc4b6;
         cursor: pointer;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 1001px) {
           padding-right: 3.5rem;
         }
       }
@@ -84,7 +84,7 @@ main {
     /*  h1 and paragraph div  */
     #h1p-wrapper {
       /*  */
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1001px) {
         width: 80%;
       }
 
@@ -99,13 +99,13 @@ main {
         padding-bottom: 1rem;
         color: #646767;
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 1001px) {
           display: none;
         }
       }
       .other-p {
         display: none;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 1001px) {
           display: block;
           color: #646767;
         }
@@ -120,7 +120,7 @@ main {
     padding: 0 1rem;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1001px) {
       height: 100%;
       width: 50%;
       margin-top: 1rem;
@@ -130,7 +130,7 @@ main {
     & form {
       display: grid;
 
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 1001px) {
         width: 100%;
         .form-couple-twins {
           display: grid;
@@ -179,6 +179,7 @@ main {
         border: 2px solid rgb(233, 232, 232);
         color: #afb4b4;
       }
+   
       .date-text {
         position: relative;
         background-color: #2dc4b6;
@@ -239,13 +240,13 @@ main {
     }
   }
   .mobile-footer {
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1001px) {
       display: none;
     }
   }
   .other-footer {
     display: none;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1001px) {
       display: block;
       padding-bottom: 1.5rem;
     }

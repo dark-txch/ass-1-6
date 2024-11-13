@@ -22,28 +22,24 @@ main {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to right, #ff0095, #f85e00);
+  position: relative;
 }
 /*  section wrapper */
 #wrapper {
-  /* background: linear-gradient(to right, #ff0095, #f85e00); */
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*  tablet and laptop  */
-  @media screen and (min-width: 600px) {
-    position: relative;
-  }
 
   .fa-house {
     font-size: 2rem;
     cursor: pointer;
     color: white;
-    transform: translate(0, 15rem);
+    position: absolute;
+    transform: translate(-1rem, 13rem);
     /*  tablet and laptop  */
     @media screen and (min-width: 600px) {
-      position: absolute;
       transform: translate(-2rem, 23rem);
     }
   }
@@ -85,10 +81,4 @@ main {
       font-size: calc(var(--base) * 1em);
     }
   }
-}
-/*  footer */
-& footer {
-  color: #ffffff;
-  text-align: end;
-  padding: 0.3rem 1rem;
 }
