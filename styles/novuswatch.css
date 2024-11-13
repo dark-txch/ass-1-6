@@ -42,9 +42,11 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     /*  tablet  */
     @media screen and (min-width: 600px) {
       height: 90vh;
+      width: auto;
     }
 
     .image {
@@ -85,14 +87,14 @@ main {
         width: 24rem;
       }
 
-      #home {
-        font-size: 1.5rem;
+      .fa-house {
+        font-size: 2rem;
         cursor: pointer;
-        transform: translate(15rem, 1.5rem);
+        color: black;
+        transform: translate(15rem, 1rem);
         position: absolute;
         @media screen and (min-width: 600px) {
-          font-size: 1.3rem;
-          transform: translate(20rem, 1.5rem);
+          transform: translate(20rem, 1rem);
         }
       }
 

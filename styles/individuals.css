@@ -71,10 +71,11 @@ main {
         }
       }
 
-      #home {
-        font-size: 1.5rem;
+      .fa-house {
+        font-size: 2rem;
+        color: #2dc4b6;
+        cursor: pointer;
         @media screen and (min-width: 600px) {
-          font-size: 1.3rem;
           padding-right: 3.5rem;
         }
       }
@@ -148,10 +149,14 @@ main {
       }
 
       & input {
-        padding: 0.8rem 0.5rem;
+        width: 100%;
+        height: 3rem;
+        font-size: 1.1rem;
+        padding-left: 1rem;
         border: 2px solid rgb(233, 232, 232);
+
         &::placeholder {
-          font-size: 0.8rem;
+          font-size: 1.1rem;
           color: #afb4b4;
         }
         &:focus {
@@ -159,19 +164,40 @@ main {
         }
       }
 
+      #first-name {
+        border: 2px solid #2dc4b6;
+        &::placeholder {
+          color: #343535;
+        }
+      }
+
       & select {
-        padding: 0.8rem 0.5rem;
+        width: 100%;
+        height: 3rem;
+        font-size: 1.1rem;
+        padding-left: 1rem;
         border: 2px solid rgb(233, 232, 232);
         color: #afb4b4;
-        font-size: 0.8em;
       }
-      #date {
-        color: #afb4b4;
+      .date-text {
+        position: relative;
+        background-color: #2dc4b6;
+        & input {
+          width: 100%;
+          padding-right: 2.8rem;
+        }
+
+        .fa-calendar-days {
+          position: absolute;
+          right: 1.2rem;
+          bottom: 1.1rem;
+          color: #afb4b4;
+        }
       }
 
       #form-couple-input {
-        position: relative;
         .input-eye {
+          position: relative;
           background-color: pink;
           width: 100%;
 
@@ -179,14 +205,14 @@ main {
             width: 100%;
             padding-right: 2.8rem;
           }
-        }
 
-        & span {
-          position: absolute;
-          right: 1.2rem;
-          bottom: 0.9rem;
-          color: #afb4b4;
-          font-size: 0.8rem;
+          .fa-eye {
+            position: absolute;
+            right: 1.2rem;
+            bottom: 1.1rem;
+            color: #afb4b4;
+            font-size: 0.8rem;
+          }
         }
       }
 

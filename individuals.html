@@ -29,7 +29,7 @@
           <span>
             <img src="./assets/Logo.png" alt="individuals" />
           </span>
-          <span id="home">
+          <span>
             <a href="./index.html">
               <i class="fa-solid fa-house"></i>
             </a>
@@ -66,12 +66,7 @@
             </div>
             <div id="form-couple-input">
               <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                name="last name"
-                id="last-name"
-                placeholder="Balogun"
-              />
+              <input type="text" name="last name" id="last-name" />
             </div>
             <div id="form-couple-select">
               <label for="gender">Gender</label>
@@ -84,7 +79,17 @@
             </div>
             <div id="form-couple-select">
               <label for="date of birth">Date of Birth</label>
-              <input type="date" name="date of birth" id="date" />
+              <div class="date-text">
+                <input
+                  type="text"
+                  name="date of birth"
+                  id=""
+                  placeholder="Select here"
+                />
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                </span>
+              </div>
             </div>
             <div id="form-couple-input">
               <label for="weight (kg)">Weight (KG)</label>
@@ -110,8 +115,11 @@
             <label for="activity level">Activity Level</label>
             <select name="activity level" id="">
               <option value="" disabled selected>Select here</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">Often</option>
+              <option value="">Sometimes</option>
+              <option value="">On happy days</option>
+              <option value="">On sad days</option>
+              <option value="">Never</option>
             </select>
           </div>
           <div id="form-couple-input">
