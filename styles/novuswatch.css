@@ -28,28 +28,19 @@ main {
   background-color: #a7a8cd;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 1rem;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /*   */
-
-  article {
-    display: flex;
-    flex-direction: column;
-    height: 95vh;
-    width: 95%;
-    /*  tablet  */
-    @media screen and (min-width: 600px) {
-      height: 80vh;
-      width: auto;
-    }
+  & section {
+    height: 80vh;
+    position: relative;
 
     .image {
-      height: 50vh;
-      aspect-ratio: 1;
-      position: relative;
-
       & img {
         height: 100%;
         width: 100%;
@@ -73,9 +64,8 @@ main {
     }
 
     .context {
-      height: 100%;
       background-color: white;
-      padding: 0 0.8rem;
+      padding: 0 0.8rem 1rem;
       position: relative;
 
       @media screen and (min-width: 600px) {
@@ -105,7 +95,10 @@ main {
       & p {
         font-weight: 400;
         font-size: 1.1rem;
-        line-height: 1.6rem;
+        line-height: 1.4rem;
+        @media screen and (min-width: 600px) {
+          line-height: 1.7rem;
+        }
       }
     }
   }
