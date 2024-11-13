@@ -35,7 +35,7 @@ main {
 
   #wrapper {
     /* -- header section -- */
-    /* height: 100vh; */
+    height: 100vh;
 
     @media screen and (min-width: 600px) {
       width: 100vw;
@@ -112,7 +112,6 @@ main {
 
     #article-section {
       width: 100%;
-      height: auto;
       background-color: #666666;
       display: grid;
       @media screen and (min-width: 1001px) {
