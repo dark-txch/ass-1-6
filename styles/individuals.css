@@ -178,6 +178,7 @@ main {
         font-size: 1.1rem;
         padding-left: 1rem;
         border: 2px solid rgb(233, 232, 232);
+        background-color: white;
         color: #afb4b4;
       }
 
