@@ -23,62 +23,51 @@ main {
   height: 100vh;
   background: linear-gradient(to right, #ff0095, #f85e00);
   position: relative;
-}
-/*  section wrapper */
-#wrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 10rem;
 
+  /*  font awesome icon  */
   .fa-house {
     font-size: 2rem;
     cursor: pointer;
     color: white;
     position: absolute;
-    transform: translate(-1rem, 13rem);
+    transform: translate(-1rem, 17rem);
     /*  tablet and laptop  */
     @media screen and (min-width: 600px) {
-      transform: translate(-2rem, 23rem);
+      transform: translate(-1rem, 22rem);
     }
   }
+}
 
-  /*  article  */
-  & article {
-    position: relative;
+& h1 {
+  background-color: #ff0095;
+  font-size: 1.5rem;
+  z-index: 99;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding: 1.3rem 2rem;
+  position: absolute;
+  transform: translate(0, -6rem);
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+    transform: translate(0, -8rem);
+    padding: 1.3rem 8rem;
   }
-
-  /*  wrapper header */
-  & h1 {
-    background-color: #ff0095;
-    font-size: calc(var(--base) * 1em);
-    text-align: center;
-    padding: 0.8em 0;
-    border-radius: 0.2em;
-    width: 82%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    font-weight: 700;
-    /*  tablet  */
-    @media screen and (min-width: 600px) {
-      font-size: calc(var(--base) * 1.5em);
-    }
-  }
-
-  & p {
-    /* position: relative; */
-    background-color: rgb(255, 255, 255);
-    font-size: calc(var(--base) * 0.5em);
-    font-weight: 500;
-    padding: 5.5em 2em 2em;
-    border-radius: 0.5em;
-    line-height: 1.4em;
-    /*  tablet  */
-    @media screen and (min-width: 600px) {
-      font-size: calc(var(--base) * 1em);
-    }
+}
+& p {
+  background-color: white;
+  padding: 5rem 1.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  position: relative;
+  @media screen and (min-width: 600px) {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding: 6rem 2.2rem 2.2rem;
   }
 }
