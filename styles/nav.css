@@ -4,8 +4,11 @@
   --base: 1.35;
 }
 
-html {
+html,
+body {
   font-size: 1rem;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /*  asterics  */
@@ -27,9 +30,7 @@ html {
 /*  main container  */
 
 main {
-  /* background: linear-gradient(to bottom, #ff0095, #ffea00); */
   background-color: rgb(0, 0, 0);
-  color: #0aefff;
   height: 100vh;
   width: 100vw;
 }
@@ -41,10 +42,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45%;
 
   & h1 {
     font-size: 2.2rem;
+    padding: 4rem 0 2rem;
+    color: #0aefff;
 
     @media screen and (min-width: 600px) {
       font-size: 3rem;
@@ -53,8 +55,7 @@ main {
 
   & span {
     font-size: 3rem;
-
-    /*  ----------------MEDIA QUERY FOR TABLET AND LAPTOP */
+    padding-bottom: 3rem;
 
     @media screen and (min-width: 600px) {
       font-size: 4rem;
@@ -71,18 +72,21 @@ main {
   flex-direction: column;
 
   /*  */
-
   & nav {
     /* let background color change in animation to the colors of each li */
     text-align: center;
 
+    /*  */
     & ul {
       list-style-type: none;
       display: flex;
       flex-direction: column;
       gap: 5px;
 
+      /*  */
       & li {
+        font-size: 1.2rem;
+        /*  */
         /*  give each li a different color based on their link site  */
         &:nth-child(1) {
           background: linear-gradient(to right, #ff0095, #f85e00);
@@ -90,6 +94,9 @@ main {
 
         &:nth-child(2) {
           background-color: #666666;
+          & a {
+            color: white;
+          }
         }
 
         &:nth-child(3) {
@@ -107,21 +114,14 @@ main {
           }
         }
 
-        &:nth-child(5) {
-          background-color: #0aefff;
-        }
-
-        &:nth-child(6) {
-          background-color: #0aefff;
-        }
-
+        /*  */
         & a {
           text-decoration: none;
           display: flex;
           align-items: center;
           justify-content: center;
           color: #0aefff;
-          height: 3.5rem;
+          height: 4rem;
           @media screen and (min-width: 600px) {
             height: 4.5rem;
           }
@@ -134,6 +134,8 @@ main {
     }
   }
 }
+
+/*  */
 footer {
   color: black;
   margin-top: 5px;
@@ -141,4 +143,4 @@ footer {
   text-align: end;
   padding: 0.3rem 1rem;
 }
-/*  main end */
+/*  --------------------------------------main end */
