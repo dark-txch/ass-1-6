@@ -26,80 +26,66 @@ html {
 
 main {
   background-color: #a7a8cd;
-  width: 100vw;
   height: 100vh;
-  padding-top: 1rem;
-  @media screen and (min-width: 600px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  /*   */
-  & section {
-    height: 80vh;
+  .fa-backward {
+    color: black;
+    position: absolute;
+    z-index: 99;
+    font-size: 2.5rem;
+    transform: translate(-1rem, -2.5rem);
+  }
+}
+
+section {
+  #image {
+    height: 19rem;
+    width: auto;
     position: relative;
 
-    .image {
-      & img {
-        height: 100%;
-        width: 100%;
-        @media screen and (min-width: 600px) {
-          width: 24rem;
-        }
-      }
+    & p {
+      position: absolute;
+      background-color: #fdf1b4;
+      display: inline;
+      padding: 0.4rem 1rem 0.4rem 0.6rem;
+      transform: translate(-0.6rem, 0.6rem);
+      border-radius: 0.3rem 1rem 1rem 0.3rem;
+    }
+
+    & img {
+      height: 100%;
+      border-radius: 0.4rem 0.4rem 0 0;
+    }
+  }
+
+  #context {
+    background-color: white;
+    max-width: 19rem;
+    padding: 0 1rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+
+    & h1 {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
 
       & span {
-        position: absolute;
-        top: 8px;
-        left: -10px;
-        background-color: #f0f092;
-        padding: 0.5em 1em 0.5em 0.7em;
-        font-weight: 900;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 14px;
-        border-top-right-radius: 14px;
+        font-size: 0.9rem;
+        color: grey;
       }
     }
 
-    .context {
-      background-color: white;
-      padding: 0 0.8rem 1rem;
-      position: relative;
-
-      @media screen and (min-width: 600px) {
-        width: 24rem;
-      }
-
-      .fa-house {
-        font-size: 2rem;
-        cursor: pointer;
-        color: black;
-        transform: translate(15rem, 1rem);
-        position: absolute;
-        @media screen and (min-width: 600px) {
-          transform: translate(20rem, 1rem);
-        }
-      }
-
-      h1 {
-        padding: 1em 0;
-
-        & span {
-          color: #999797;
-          font-size: 0.7em;
-        }
-      }
-
-      & p {
-        font-weight: 400;
-        font-size: 1.1rem;
-        line-height: 1.4rem;
-        @media screen and (min-width: 600px) {
-          line-height: 1.7rem;
-        }
-      }
+    & p {
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding-bottom: 2rem;
+      line-height: 1.2rem;
     }
   }
 }

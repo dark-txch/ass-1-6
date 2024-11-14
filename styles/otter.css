@@ -29,7 +29,7 @@ main {
   align-items: center;
 
   /*  font awesome icon  */
-  .fa-house {
+  .fa-backward {
     font-size: 2rem;
     cursor: pointer;
     color: white;

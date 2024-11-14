@@ -31,8 +31,6 @@ main {
   width: 100vw;
   font-family: "Lato", sans-serif;
 
-
-
   #header-section {
     background-color: #ffffff;
     padding: 0 1em;
@@ -46,12 +44,12 @@ main {
       justify-content: center;
     }
 
-    .fa-house {
+    .fa-backward {
       font-size: 2rem;
       cursor: pointer;
       color: #555555;
       position: absolute;
-      transform: translate(15rem, 4rem);
+      transform: translate(16rem, 4rem);
       /*  tablet  */
       @media screen and (min-width: 600px) {
         transform: translate(25rem, 4.5rem);

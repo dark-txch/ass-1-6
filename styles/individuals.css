@@ -71,9 +71,9 @@ main {
         }
       }
 
-      .fa-house {
-        font-size: 2rem;
-        color: #2dc4b6;
+      .fa-backward {
+        font-size: 2.5rem;
+        color: #555555;
         cursor: pointer;
         @media screen and (min-width: 1001px) {
           padding-right: 3.5rem;
@@ -118,12 +118,11 @@ main {
   #form-wrapper {
     background-color: white;
     padding: 0 1rem;
-    margin-bottom: 2rem;
 
     @media screen and (min-width: 1001px) {
-      height: 94%;
+      height: 100vh;
       width: 50%;
-      margin-top: 2rem;
+      padding: 1rem 1rem;
     }
 
     /*  form  */
@@ -132,7 +131,6 @@ main {
 
       @media screen and (min-width: 1001px) {
         width: 100%;
-        padding-top: 1rem;
         .form-couple-twins {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -242,6 +240,8 @@ main {
     }
   }
   .mobile-footer {
+    padding: 1.5rem 0;
+
     @media screen and (min-width: 1001px) {
       display: none;
     }
