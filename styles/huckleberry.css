@@ -50,8 +50,9 @@ main {
   }
   /*  laptop  */
   @media screen and (min-width: 1001px) {
-    .fa-house {
-      transform: translate(35rem, 4.5rem);
+    .fa-backward {
+      transform: translate(50rem, 4.5rem);
+      color: red;
     }
   }
 
