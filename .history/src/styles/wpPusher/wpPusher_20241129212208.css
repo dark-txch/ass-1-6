@@ -187,7 +187,7 @@ main {
 	text-transform: capitalize;
 }
 #twin input {
-	padding: 1rem;
+	/* padding: 1rem; */
 	background-color: #e1e4e5;
 
 	/* border: 2px solid red; */
