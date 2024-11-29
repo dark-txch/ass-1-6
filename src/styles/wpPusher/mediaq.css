@@ -1,0 +1,118 @@
+/* -------------------------Assignment 5 media query--------------------- */
+
+@media (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+
+	nav ul {
+		position: static;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: auto;
+		width: auto;
+		margin: 0;
+		background: none;
+	}
+
+	nav ul li {
+		margin: 0;
+	}
+
+	nav ul li a {
+		color: black;
+		font-size: 1rem;
+	}
+
+	nav ul li a.active {
+		border: 2px solid black;
+		color: black;
+	}
+
+	nav ul li a:hover {
+		color: white;
+		background-color: #1479bf;
+	}
+
+	/* ---------------------------------------------- */
+	/* ----------------------------main */
+	main {
+		display: grid;
+		grid-template-columns: 1fr 35%;
+		place-self: center;
+
+		width: 70vw;
+
+		margin-top: 8rem;
+	}
+
+	/* ----------------------------form section */
+
+	#formWhite h1 {
+		font-size: 1.7rem;
+
+		margin: 0 2rem;
+	}
+	#formWhite h3 {
+		font-size: 1rem;
+
+		margin: 0 2rem;
+	}
+
+	/* ----------------twin */
+	#twin {
+		display: flex;
+		gap: 1rem;
+
+		margin: 0 2rem;
+
+		/* justify-content: space-between; */
+	}
+
+	#single {
+		margin: 0 2rem;
+	}
+
+	#single input {
+		width: 80%;
+	}
+
+	#single #creditCard {
+		width: 100%;
+
+		/* ask how ebube seperated the placeholder content */
+	}
+
+	button.buyButton {
+		/* display: grid; */
+		place-self: center;
+		/* margin: 0 9rem; */
+
+		width: calc(100% - 6rem);
+	}
+
+	/* ----------footer */
+	.formFooter {
+		width: 75%;
+
+		/* margin-bottom: 4rem; */
+
+		font-size: 1rem;
+	}
+	.logo {
+		margin: 1.5rem 0;
+	}
+
+	/* ---------------- */
+
+	/* ------------------------------blue section */
+	#blueSection {
+		height: 60vw;
+
+		padding-left: 2rem;
+
+		/* font-size: 1rem; */
+	}
+}

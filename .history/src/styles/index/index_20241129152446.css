@@ -1,0 +1,101 @@
+/*  mobile workflow */
+html {
+	--background-color: black;
+	--font-size: 1rem;
+}
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+/*   -------------------------------- main */
+nav {
+	min-height: 100vh;
+	min-width: 100%;
+
+	background-color: var(--background-color);
+	color: whitesmoke;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	border: 2px solid blue;
+}
+
+nav ul {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+
+	min-width: 100%;
+	border-radius: 0 50% 0 0;
+}
+
+nav ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 10rem;
+	min-width: 100%;
+}
+
+nav ul li:nth-child(1) {
+	color: white;
+	background-color: #ff0095;
+	border-radius: 0 0 0.4rem 50%;
+}
+
+nav ul li:nth-child(2) {
+	color: black;
+	background-color: #ffbe00;
+
+	border-radius: 0 50% 0 0;
+}
+
+nav ul li:nth-child(3) {
+	color: black;
+	background-color: #a7a8cd;
+
+	border-radius: 0 0 50% 0;
+}
+
+nav ul > :nth-child(4) {
+	background-color: #ff2929;
+
+	border-radius: 0 0 0 50%;
+}
+nav ul > :nth-child(5) {
+	background-color: #eaf7ff;
+	color: black;
+
+	border-radius: 50% 0 0 0;
+}
+nav ul :nth-child(6) {
+	background-color: #015ae2;
+
+	border-radius: 0 50% 0 0;
+}
+
+nav ul li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: whitesmoke;
+	min-height: 10rem;
+	min-width: 10rem;
+
+	font-size: calc(var(--font-size) * 1.5);
+	text-align: center;
+}

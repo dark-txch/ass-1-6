@@ -1,0 +1,46 @@
+/*  mobile workflow */
+body {
+	background-color: black;
+	color: var(--primary-color);
+}
+
+/*   -------------------------------- main */
+main {
+	min-height: 100%;
+	display: grid;
+	justify-content: center;
+
+	background-color: pink;
+}
+
+nav {
+	border: 2px solid orange;
+
+	plac
+}
+
+nav ul > :nth-child(1) {
+	background-color: #3d3bf3;
+	min-height: 15rem;
+	min-width: 100%;
+	border-radius: 0 50% 0 0;
+}
+
+nav > :nth-child(2) {
+	background-color: #ff2929;
+	min-height: 15rem;
+	min-width: 100%;
+	border-radius: 0 0 0 50%;
+}
+
+nav ul {
+	display: grid;
+	place-items: center;
+	font-size: calc(var(--font-size) * 2);
+
+	list-style: none;
+
+	& a {
+		color: var(--primary-color);
+	}
+}

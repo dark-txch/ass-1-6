@@ -1,0 +1,91 @@
+/* -- general base css START -- */
+
+:root {
+	--base: 1.35;
+}
+
+html {
+	font-size: 1rem;
+}
+
+/*  asterics  */
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+/* -- general base css END -- */
+
+/*  */
+
+/* -- -------------This project starts with a mobile workflow -- */
+
+main {
+	background-color: #a7a8cd;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.fa-backward {
+		color: black;
+		position: absolute;
+		z-index: 99;
+		font-size: 2.5rem;
+		transform: translate(-1rem, -2.5rem);
+	}
+}
+
+section {
+	#image {
+		height: 19rem;
+		width: auto;
+		position: relative;
+
+		& p {
+			position: absolute;
+			background-color: #fdf1b4;
+			display: inline;
+			padding: 0.4rem 1rem 0.4rem 0.6rem;
+			transform: translate(-0.6rem, 0.6rem);
+			border-radius: 0.3rem 1rem 1rem 0.3rem;
+		}
+
+		& img {
+			height: 100%;
+			border-radius: 0.4rem 0.4rem 0 0;
+		}
+	}
+
+	#context {
+		background-color: white;
+		max-width: 19rem;
+		padding: 0 1rem;
+		border-radius: 0 0 0.4rem 0.4rem;
+
+		& h1 {
+			padding-top: 1.5rem;
+			padding-bottom: 1rem;
+			font-size: 1.5rem;
+
+			& span {
+				font-size: 0.9rem;
+				color: grey;
+			}
+		}
+
+		& p {
+			font-weight: 600;
+			font-size: 0.8rem;
+			padding-bottom: 2rem;
+			line-height: 1.2rem;
+		}
+	}
+}
