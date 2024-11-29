@@ -1,0 +1,735 @@
+/* ----------------- Only Laptop View------------- */
+
+/*  ----------------------General style for all  -----*/
+
+:root {
+	--font-size: 1rem;
+
+	--breakpoint-medium: 768px;
+	--breakpoint-large: 1024px;
+}
+
+html,
+body {
+	min-height: 100%;
+	min-width: 100%;
+	background-color: white;
+}
+
+/*  ----------------- asteriks  */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+/* ----------------- main style for assignment 6--------------- */
+
+main {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/*  header nav section */
+#headSection {
+	display: grid;
+	justify-content: center;
+}
+
+/*  ------------------------------navigation section---- */
+#navigationBlock {
+	display: flex;
+	justify-content: space-between;
+	place-items: center;
+	place-self: center;
+
+	margin-top: 0.6rem;
+	min-width: 80%;
+}
+
+.imgBox {
+	display: flex;
+
+	& img {
+		width: 8rem;
+	}
+}
+
+/*   ------navigation unordered list---- */
+#navigationBlock > ul {
+	display: flex;
+	list-style: none;
+	font-size: 1.1rem;
+}
+
+.ul-center {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2.5rem;
+}
+
+.ul-center > :first-child {
+	color: #015ae2;
+}
+
+.fa-chevron-down {
+	font-size: 0.7rem;
+	color: grey;
+}
+
+.ul-end {
+	display: flex;
+	align-items: center;
+
+	gap: 1rem;
+}
+.ul-end > :nth-child(2) {
+	background-color: #015ae2;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 1.4rem;
+}
+
+/* -------------------------- header body div------------ */
+#headerBody {
+	max-width: 50rem;
+	margin-top: 5rem;
+	padding-bottom: 3rem;
+
+	place-self: center;
+	text-align: center;
+
+	#textCap {
+		font-size: 2.6rem;
+		line-height: 4rem;
+		padding-bottom: 3rem;
+
+		text-transform: capitalize;
+	}
+
+	#textCap > span {
+		color: #015ae2;
+		position: relative;
+	}
+
+	#textCap > img {
+		width: 8.2rem;
+		position: absolute;
+		transform: translate(-21.6rem, 3rem);
+	}
+
+	& p {
+		max-width: 30rem;
+		line-height: 1.4rem;
+		font-size: 1.1rem;
+
+		place-self: center;
+		text-align: center;
+
+		padding-bottom: 2rem;
+	}
+
+	#signupBlue :nth-child(1) {
+		background-color: #015ae2;
+		color: white;
+
+		font-size: 1.1rem;
+		padding: 0.5rem 1.5rem;
+		border-radius: 1.4rem;
+	}
+	#signupBlue :nth-child(2) {
+		margin-left: 2rem;
+		font-size: 1.1rem;
+		color: #015ae2;
+	}
+}
+
+/* -------------------------- One stop four section  */
+#oneStopFour {
+	place-self: end;
+	margin-right: 17.5rem;
+
+	min-width: 33rem;
+}
+
+.sideNote {
+	border: 0.5px solid #015ae2;
+	border-radius: 1rem;
+
+	background: linear-gradient(to right, #ebf0f4, white);
+
+	margin: 1rem 0 4rem 3rem;
+	padding: 1.4rem 0 1.5rem 2rem;
+	z-index: 99;
+
+	position: relative;
+
+	& img {
+		width: 13rem;
+		padding-bottom: 0.8rem;
+	}
+}
+
+.paraContainer {
+	margin-right: 1.3rem;
+	place-items: center;
+
+	& p {
+		max-width: 15rem;
+
+		font-size: 1.1rem;
+		text-align: center;
+	}
+}
+
+#oneStopFour > span:last-of-type > img {
+	max-width: 9rem;
+
+	position: absolute;
+	transform: translate(3.5rem, -12.6rem);
+}
+
+/* ---------------------One stop possibilities setup --- */
+#oneStopFourDesk {
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+
+#oneStopFourDesk span:nth-of-type(1) img {
+	max-width: 100vw;
+}
+
+#oneStopFourDesk span:nth-of-type(2) img {
+	max-width: 50vw;
+
+	position: absolute;
+	transform: translate(-50%, -1rem);
+	top: 50%;
+	left: 50%;
+}
+
+/* --------------- One stop possibilities section ---------- */
+
+.oneStopFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4rem;
+
+	background-color: #fafbfd;
+
+	padding: 1.5rem 7rem;
+}
+
+.oneStopFlex h2 {
+	flex: 1;
+	font-size: 2rem;
+}
+
+.oneStopFlex h2 span {
+	color: #015ae2;
+}
+
+.oneStopFlex ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	flex: 2;
+}
+
+.oneStopFlex ul li h5 {
+	font-size: 1.7rem;
+	font-weight: 200;
+	padding-bottom: 0.6rem;
+}
+
+.oneStopFlex ul li p {
+	font-size: 1rem;
+}
+
+/* ----------------- Why choose scissors container------------ */
+#whyScissors {
+	display: flex;
+	justify-content: space-between;
+	gap: 4rem;
+
+	padding: 6rem 6.5rem;
+}
+
+.scissors {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.scissors h2 {
+	font-size: 1.8rem;
+
+	border-left: 4px solid transparent;
+	/*  the 1 specifies the slice value for the gradient, ensuring it spans correctly. */
+	border-image: linear-gradient(to bottom, grey, white) 1;
+	padding-left: 0.4rem;
+}
+
+.scissors h2 span {
+	color: #015ae2;
+}
+
+.scissors p {
+	max-width: 22em;
+	font-size: 0.8rem;
+	padding-top: 0.8rem;
+	padding-left: 1.2rem;
+}
+
+/* ------------container next to 'Why choose scissors'  */
+#scissors-side {
+	display: flex;
+	flex: 2;
+	gap: 4rem;
+}
+
+#box-1 {
+	display: grid;
+}
+
+.box-1 span :nth-child(1) {
+	width: 2rem;
+	position: relative;
+	padding-bottom: 1rem;
+}
+
+.box-1 span:nth-of-type(2) img {
+	width: 0.8rem;
+	position: absolute;
+	transform: translate(-1.4rem, 0.6rem);
+}
+
+.box-1 h5 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	padding-bottom: 0.6rem;
+}
+
+.box-1 p {
+	font-size: 0.8rem;
+	padding-bottom: 3rem;
+}
+
+/* -----------------------A price perfect section-------- */
+#pricePerfect {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center;  */
+	align-items: center;
+	/* text-align: center; */
+	padding-top: 1.5rem;
+}
+
+#pricePerfect span {
+	color: #015ae2;
+}
+
+#pricePerfect h2 {
+	border-left: 4px solid transparent;
+	border-image: linear-gradient(to bottom, grey, white) 1;
+	padding-left: 0.4rem;
+	padding-bottom: 0.6rem;
+
+	font-size: 1.7rem;
+}
+
+#pricePerfect p {
+	font-size: 0.8rem;
+	text-align: center;
+
+	max-width: 22rem;
+
+	padding-left: 0.7rem;
+	padding-bottom: 2.5rem;
+}
+
+/*  -------------------------------price range ---------- */
+#pricePerfect-range {
+	display: flex;
+
+	margin-bottom: 4rem;
+}
+
+#pricePerfect-range ul {
+	list-style: none;
+}
+
+/* ---------------------------------------basic price  */
+.basic {
+	margin: 5rem 0;
+	padding: 1rem 5rem;
+
+	border: 0.5px solid #015ae2;
+}
+.basic h4 {
+	font-size: 1.1rem;
+	font-weight: 200;
+
+	padding-bottom: 1.3rem;
+}
+.basic h5 {
+	font-size: 1.8rem;
+	padding-bottom: 0.6rem;
+}
+.basic h6 {
+	font-size: 0.9rem;
+	font-weight: 200;
+	padding-bottom: 1.5rem;
+}
+.basic ul li {
+	font-size: 0.7rem;
+	padding-bottom: 0.8rem;
+
+	/* ----------calling the image using url--------- */
+	background-image: url("../../assets/scissors/check-circle.svg");
+	background-size: 0.8rem 0.8rem;
+	background-repeat: no-repeat;
+	padding-left: 1rem;
+}
+
+/* ---------------------------------professional price  */
+.professional {
+	background-color: #1e3447;
+	color: white;
+
+	padding: 5rem 5.5rem;
+	border-radius: 0.4rem;
+}
+.professional h4 {
+	font-size: 1.1rem;
+	font-weight: 200;
+
+	padding-bottom: 1rem;
+}
+.professional h5 {
+	font-size: 1.8rem;
+	padding-bottom: 0.6rem;
+}
+.professional h6 {
+	font-size: 0.9rem;
+	font-weight: 200;
+	padding-bottom: 1.5rem;
+}
+.professional ul li {
+	font-size: 0.7rem;
+	padding-bottom: 0.9rem;
+
+	/* ----------calling the image using url--------- */
+	background-image: url("../../assets/scissors/check-circle.svg");
+	background-size: 0.8rem 0.8rem;
+	background-repeat: no-repeat;
+	padding-left: 1rem;
+}
+
+/* ------------------------------------teams price  */
+.teams {
+	margin: 5rem 0;
+	padding: 1rem 5rem;
+
+	border: 0.5px solid #015ae2;
+}
+.teams h4 {
+	font-size: 1.1rem;
+	font-weight: 200;
+
+	padding-bottom: 1.3rem;
+}
+.teams h5 {
+	font-size: 1.8rem;
+	padding-bottom: 0.6rem;
+}
+.teams h6 {
+	font-size: 0.9rem;
+	font-weight: 200;
+	padding-bottom: 1.5rem;
+}
+.teams ul li {
+	font-size: 0.7rem;
+	padding-bottom: 0.8rem;
+
+	/* ----------calling the image using url--------- */
+	background-image: url("../../assets/scissors/check-circle.svg");
+	background-size: 0.8rem 0.8rem;
+	background-repeat: no-repeat;
+	padding-left: 1rem;
+}
+
+/* -------------------price button-------- */
+#priceButton {
+	display: flex;
+	gap: 1rem;
+	padding-bottom: 5rem;
+}
+
+#priceButton :nth-child(1) {
+	font-size: 0.8rem;
+	color: #015ae2;
+	border: 1px solid #015ae2;
+
+	padding: 0.6rem 1.4rem;
+	border-radius: 4rem;
+}
+#priceButton :nth-child(2) {
+	font-size: 0.8rem;
+	color: white;
+	background-color: #015ae2;
+
+	padding: 0.7rem 2.2rem;
+	border-radius: 4rem;
+}
+
+/* --------------------form section-------------- */
+#formBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #1e3447;
+
+	min-height: 30rem;
+}
+/* ---------------------------form --------------- */
+#formBox form {
+	min-width: 30rem;
+	border-radius: 0.4rem;
+	background-color: white;
+	padding: 3rem;
+}
+/* ------------------------input */
+#pasteUrl {
+	border: 1px solid #015ae2;
+	border-radius: 1rem;
+
+	padding: 1.3rem 1.5rem;
+	margin-bottom: 1.3rem;
+
+	width: 100%;
+}
+#pasteUrl::placeholder {
+	font-size: 0.8rem;
+	color: #5d8fda;
+	opacity: 0.7;
+}
+
+/* ---------------------select  domain*/
+.selectInput {
+	display: flex;
+	gap: 1rem;
+}
+/* domain select */
+#chooseDomain {
+	width: 48%;
+
+	opacity: 0.7;
+	font-size: 0.9rem;
+
+	padding: 1.3rem 1.2rem;
+	margin-bottom: 1.3rem;
+
+	border: 1px solid #015ae2;
+	border-radius: 1rem;
+	color: #015ae2;
+}
+
+/* --------------------input for type alias */
+#typeAlias {
+	width: 48%;
+
+	border: 1px solid #015ae2;
+	border-radius: 1rem;
+
+	padding: 1.3rem 1.5rem;
+	margin-bottom: 1.3rem;
+}
+#typeAlias::placeholder {
+	font-size: 0.8rem;
+
+	color: #5d8fda;
+}
+
+/* ------------------------submit button */
+#trimUrl {
+	position: relative;
+}
+
+.trimUrl {
+	background-color: #015ae2;
+	color: white;
+
+	font-size: 0.9rem;
+	padding: 1rem 0;
+
+	border-radius: 2rem;
+	margin-bottom: 1.5rem;
+
+	width: 100%;
+}
+#trimUrl img[src="../../src/assets/scissors/magic-wand-svgrepo-com.svg"] {
+	position: absolute;
+	width: 0.9rem;
+	transform: translate(-9.5rem, 1.1rem);
+}
+
+/* ----------------------terms and conditions */
+#formBox form p {
+	font-size: 0.9rem;
+	width: 20rem;
+
+	color: #5d8fda;
+}
+#formBox form p span {
+	color: #015ae2;
+	font-weight: 700;
+}
+
+/* --------------------------------FAQs---------- */
+#faqs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	place-self: center;
+
+	width: 50rem;
+	margin-bottom: 4rem;
+}
+#faqs h2 {
+	border-left: 4px solid transparent;
+	border-image: linear-gradient(to bottom, grey, white) 1;
+	padding-left: 0.4rem;
+	margin: 2rem 0 3rem;
+
+	font-size: 1.7rem;
+}
+/* ------------------FAQs unorderd list-------- */
+#faqs ul {
+	list-style: none;
+}
+#faqs ul li {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 0.9rem;
+}
+
+.twinP p:first-of-type {
+	padding-bottom: 1rem;
+}
+
+/* -----------------FAQS hr--------- */
+#faqs hr {
+	margin: 1rem 0 2rem;
+
+	border: none;
+	border-top: 2px solid rgb(232, 231, 231);
+}
+
+/* ---------------------------------------revolutioning link  */
+#getStarted {
+	background-color: #1e3447;
+	height: 20rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#getStarted h5 {
+	color: white;
+	margin-bottom: 1.5rem;
+
+	font-size: 1.5rem;
+}
+
+#getStarted button {
+	font-size: 0.8rem;
+	color: white;
+	background-color: #015ae2;
+
+	padding: 0.7rem 2.5rem;
+	border-radius: 4rem;
+}
+
+/*  ------------------------footer ------- */
+/* -------footer structure */
+footer {
+	padding: 5rem 8rem 5rem;
+	display: flex;
+	flex-direction: column;
+}
+.footerFlex {
+	display: flex;
+}
+/* --------------footer contents */
+#footerIcons {
+	/* border: 2px solid red; */
+
+	flex: 1;
+}
+
+#footerIcons > span > img {
+	width: 7rem;
+	padding-bottom: 1.5rem;
+}
+
+#footerIcons ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	padding-left: 0.3rem;
+}
+
+/* ---------------- footer left container--- */
+#footerSideCon {
+	display: grid;
+	flex: 2;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footerH6 {
+	padding-bottom: 4rem;
+}
+.footerH6E {
+	padding-bottom: 2.7rem;
+}
+
+#footerSideCon h6 {
+	font-size: 0.8rem;
+	padding-bottom: 1rem;
+}
+
+#footerSideCon ul li {
+	font-size: 0.7rem;
+	padding-bottom: 0.5rem;
+	list-style: none;
+}
+
+/* ------------------------ copyright */
+.fa-backward {
+	color: black;
+	position: absolute;
+	z-index: 99;
+	font-size: 2.5rem;
+	transform: translate(-1rem, -2.5rem);
+
+	text-align: end;
+}
+
+#copyright {
+	display: flex;
+	justify-content: space-between;
+}
+
+.scissorsSpan span {
+	padding-left: 1rem;
+}

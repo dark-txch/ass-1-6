@@ -1,0 +1,411 @@
+/*  ----------------------General style for all  -----*/
+
+:root {
+	--font-size: 1rem;
+
+	--breakpoint-medium: 768px;
+	--breakpoint-large: 1024px;
+}
+
+html,
+body {
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #ebf7ff;
+
+	/* font-family: monospace; */
+}
+
+/*  ----------------- asteriks  */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* ----------------- Mobile Workflow------------- */
+
+/* -----------------------nav section */
+
+#navSection {
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	top: 0;
+	z-index: 99;
+
+	background-color: #ebf7ff;
+}
+
+nav {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	padding: 0 1rem;
+
+	border-bottom: 1.5px solid rgb(203, 201, 201);
+}
+
+nav img {
+	width: 9rem;
+}
+
+/* ---------------------Hamburger Menu Button */
+.hamburger {
+	font-size: 2.5rem;
+	color: black;
+	cursor: pointer;
+	display: block;
+}
+
+/* ---------------------------checkbox */
+#check {
+	display: none;
+}
+
+/* Navigation Menu (Mobile Default: Hidden) */
+nav ul {
+	display: grid;
+	place-content: center;
+	transition: all 0.5s;
+	text-align: center;
+
+	background: black;
+
+	position: fixed;
+	top: 3.5rem;
+	right: -100%;
+	width: 100%;
+	height: calc(100vh - 3rem);
+
+	z-index: 1000;
+}
+
+nav ul li {
+	margin: 0.8rem 0;
+
+	margin-bottom: 1rem;
+}
+
+nav ul li a {
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	padding: 0.6rem 0.8rem;
+	border-radius: 0.5rem;
+}
+
+nav ul li a.active {
+	border: 2px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+	border: 2px solid white;
+	color: #1479bf;
+}
+
+/* Show Menu When Checkbox is Checked */
+#check:checked ~ ul {
+	right: 0; /* Slide menu into view */
+}
+
+/* -----------------------------WP-PUSHER LOGO */
+
+/* -------------------------------------------------------- */
+
+/* ----------------------------------------- */
+/* -------------------------------------------------------- */
+/* --------------------------------------------MAIN */
+main {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	margin: 6rem 0 0;
+}
+
+/* --------------------------------------form */
+#formWhite {
+	background-color: white;
+}
+
+#formWhite h1 {
+	font-size: 1.7rem;
+	font-weight: 100;
+
+	padding: 1rem;
+}
+
+/* ---------------------------------- */
+#formWhite hr {
+	border: 1.5px solid rgb(244, 244, 244);
+	margin: 1rem 0;
+
+	width: 100%;
+}
+/* ---------------------------------- */
+
+#formWhite h3 {
+	padding: 1rem 1rem 1.7rem;
+
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+
+#formWhite h3 > span {
+	border: 2px solid #1479bf;
+	border-radius: 50%;
+
+	padding: 0.3rem 0.6rem;
+	margin-right: 0.5rem;
+	font-size: 1rem;
+}
+
+/* -----------------------------------twin */
+#twin,
+#single {
+	display: grid;
+	padding: 0 1rem;
+}
+#twin label {
+	font-size: 1rem;
+	font-weight: 200;
+
+	text-transform: capitalize;
+}
+#twin input {
+	padding: 1rem;
+	background-color: #e1e4e5;
+
+	margin: 0.8rem 0;
+
+	width: 100%;
+}
+#twin ::placeholder {
+	font-size: 0.8rem;
+	color: rgb(150, 150, 150);
+
+	text-transform: capitalize;
+}
+#firstName, # {
+	width: 100%;
+}
+
+/* ---------------------------------single */
+#single label {
+	font-size: 1rem;
+	font-weight: 200;
+
+	text-transform: capitalize;
+}
+#single input {
+	padding: 1.1rem;
+	background-color: #e1e4e5;
+
+	margin: 0.8rem 0;
+
+	width: 100%;
+}
+#single ::placeholder {
+	font-size: 0.8rem;
+	color: rgb(150, 150, 150);
+}
+
+/* ----------------------------------------buy button */
+button.buyButton {
+	background-color: #068e7e;
+	color: white;
+
+	font-size: 1.2rem;
+	width: auto;
+	padding: 1rem 0;
+	display: block;
+
+	margin: 2.2rem 1rem;
+	/* ----------calculate */
+	width: calc(100% - 2rem);
+}
+
+/* -------------------------------form footer */
+#formFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0 1rem;
+
+	font-size: 1rem;
+}
+.formFooter {
+	text-align: center;
+}
+
+/* -------------------targeting each span */
+#formFooter span:nth-of-type(1) {
+	border: 2px solid #1479bf;
+	padding: 0 0.4rem;
+	border-radius: 50%;
+	margin-right: 0.4rem;
+}
+#formFooter span:nth-of-type(2) {
+	font-weight: 600;
+}
+#formFooter span.border {
+	display: inline-block;
+	padding-right: 3rem;
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid rgb(141, 140, 140);
+}
+#formFooter span.grey {
+	color: rgb(141, 140, 140);
+}
+
+/* ------logo */
+.logo {
+	margin: 1.5rem;
+}
+
+/* --------- */
+/* -----------------------------------------blue section */
+#blueSection {
+	background-color: #1479bf;
+	color: white;
+
+	display: grid;
+
+	padding: 1rem;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#blueSection h3 {
+	font-size: 1.2rem;
+	padding: 1rem 0 1rem;
+}
+/* -----------------------------blue section ninetyNine section /span --*/
+.dollar {
+	font-size: 1.4rem;
+
+	display: inline-block;
+	transform: translateY(-0.9rem);
+	padding-right: 0.4rem;
+}
+.nine {
+	font-size: 3rem;
+
+	padding-right: 0.4rem;
+}
+.year {
+	font-size: 1.1rem;
+}
+/* ------------------------------- */
+.nintyNine > p {
+	max-width: 10rem;
+
+	font-size: 1rem;
+
+	padding-bottom: 2.5rem;
+}
+
+/* --------------------unordered list  */
+
+.uL li {
+	position: relative;
+	padding: 0 2rem 0.8rem;
+
+	font-size: 1rem;
+}
+.uL li::before {
+	content: "\f00c";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	font-size: 0.6rem;
+
+	border: 2px solid #75c1f7;
+	border-radius: 50%;
+	padding: 0.1rem 0.2rem;
+}
+
+.clientSide {
+	padding: 1rem 0;
+}
+
+.twenty {
+	font-weight: 700;
+}
+
+#blueSection span > a {
+	color: white;
+
+	border-bottom: 3px solid #75c1f7;
+}
+
+#blueSection hr {
+	border-bottom: 1.5px solid #1896f0;
+	margin: 3rem 0 4rem;
+
+	width: 100%;
+}
+
+#blueSectionFooter p {
+	padding-bottom: 1.5rem;
+}
+
+.wp {
+	font-weight: 700;
+}
+
+#kirk {
+	padding-bottom: 5rem;
+}
+
+#kirk img {
+	border-radius: 50%;
+	margin-right: 0.5rem;
+}
+
+#kirk span {
+	display: inline-block;
+	transform: translateY(-1rem);
+
+	text-transform: capitalize;
+}
+/*---------------------------------------------------footer */
+footer {
+	display: grid;
+	gap: 3rem;
+
+	text-align: center;
+	padding: 3rem 0;
+}
+
+footer span {
+	color: #1479bf;
+}
+
+.fa-backward {
+	color: black;
+	position: absolute;
+	z-index: 99;
+	font-size: 2.5rem;
+	transform: translate(-1rem, -2.5rem);
+}
