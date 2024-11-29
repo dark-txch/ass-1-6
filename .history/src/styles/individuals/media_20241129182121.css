@@ -1,0 +1,56 @@
+/* -------------media query for individuals */
+@media screen and (min-width: 1001px) {
+	.icon-section {
+		width: 82%;
+
+		&img {
+			width: 4rem;
+		}
+	}
+
+	.fa-backward {
+		padding-right: 3.5rem;
+	}
+
+	#h1p-wrapper {
+		width: 80%;
+	}
+
+	/*  ---------------------------------------------section 2 _form wrapper */
+	#form-wrapper {
+		height: 100vh;
+		width: 50%;
+
+		flex: 1;
+	}
+
+	form {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.form-couple-twins {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1.5rem;
+	}
+
+	.date-text input {
+		border: none;
+	}
+
+	.input-eye input {
+		border: none;
+	}
+
+	/*------------- footer--------- */
+
+	.mobile-footer {
+		display: none;
+	}
+
+	.other-footer {
+		display: block;
+		padding-bottom: 1.5rem;
+	}
+}

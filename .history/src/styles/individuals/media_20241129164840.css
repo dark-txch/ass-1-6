@@ -1,0 +1,10 @@
+/* -------------media query for individuals */
+@media screen and (min-width: 1001px) {
+	main {
+		display: flex;
+		flex-direction: row;
+		min-height: 100vh;
+
+		padding: 0;
+	}
+}

@@ -1,0 +1,303 @@
+/* -- general base css START -- */
+
+:root {
+	--base: 1.35;
+}
+
+/*  */
+html,
+body {
+	font-size: 1rem;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/*  asterics  */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+/* -- general base css END -- */
+
+/* -- -------------This project starts with a mobile workflow -- */
+
+/*  main container  */
+
+main {
+	background-color: #e2eceb;
+	min-height: 100vh;
+	min-width: 100vw;
+	padding: 0 1rem 2rem;
+	/*  */
+	@media screen and (min-width: 1001px) {
+		display: flex;
+		flex-direction: row;
+		min-height: 100vh;
+
+		padding: 0;
+	}
+
+	/*  ------------------------------------section 1 container _icon/h1/p */
+	#section1-wrapper {
+		/*   */
+		@media screen and (min-width: 1001px) {
+			min-height: 100vh;
+			width: 50%;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		/*  icon div section  */
+		/*  */
+		.icon-section {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem 0;
+			/*  */
+			@media screen and (min-width: 1001px) {
+				width: 82%;
+			}
+
+			/*  */
+			& span {
+				/*  */
+				& img {
+					width: 3.5rem;
+					aspect-ratio: 1;
+					/*  */
+					@media screen and (min-width: 1001px) {
+						width: 4rem;
+					}
+				}
+			}
+
+			/*  */
+			.fa-backward {
+				font-size: 2.5rem;
+				color: #555555;
+				cursor: pointer;
+				/*  */
+				@media screen and (min-width: 1001px) {
+					padding-right: 3.5rem;
+				}
+			}
+		}
+
+		/*  h1 and paragraph div  */
+		#h1p-wrapper {
+			/*  */
+			@media screen and (min-width: 1001px) {
+				width: 80%;
+			}
+
+			/*  */
+			& h1 {
+				font-size: 1.7rem;
+				font-weight: 600;
+				padding-bottom: 1rem;
+			}
+
+			/*  */
+			.mobile-p {
+				line-height: 1.4rem;
+				padding-bottom: 1rem;
+				color: #646767;
+				/*  */
+				@media screen and (min-width: 1001px) {
+					display: none;
+				}
+			}
+
+			/*  */
+			.other-p {
+				display: none;
+				/*  */
+				@media screen and (min-width: 1001px) {
+					display: block;
+					color: #646767;
+				}
+			}
+		}
+	}
+
+	/*  ---------------------------------------------section 2 _form wrapper */
+	/*  form wrapper  */
+	#form-wrapper {
+		background-color: white;
+		padding: 0 1rem;
+
+		/*  */
+		@media screen and (min-width: 1001px) {
+			height: 100vh;
+			width: 50%;
+
+			flex: 1;
+		}
+
+		/*  form  */
+		& form {
+			display: grid;
+
+			/*  */
+			@media screen and (min-width: 1001px) {
+				height: 100vh;
+
+				width: 100%;
+				/*  */
+				.form-couple-twins {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					column-gap: 1.5rem;
+				}
+			}
+
+			/*  */
+			#form-couple-input,
+			#form-couple-select {
+				display: grid;
+			}
+
+			/*  */
+			& label {
+				padding: 1.2rem 0 0.4rem;
+			}
+
+			/*  */
+			& input {
+				width: 100%;
+				height: 3rem;
+				font-size: 1.1rem;
+				padding-left: 1rem;
+				border: 2px solid rgb(233, 232, 232);
+
+				background-color: yellow;
+
+				/*  */
+				&::placeholder {
+					font-size: 1.1rem;
+					color: #afb4b4;
+				}
+
+				/*  */
+				&:focus {
+					border: 2px solid #2dc4b6;
+				}
+			}
+
+			/*  */
+			#first-name {
+				border: 2px solid #2dc4b6;
+
+				/*  */
+				&::placeholder {
+					color: #343535;
+				}
+			}
+
+			/*  */
+			& select {
+				width: 100%;
+				height: 3rem;
+				font-size: 1.1rem;
+				padding-left: 1rem;
+				border: 2px solid rgb(233, 232, 232);
+				background-color: white;
+				color: #afb4b4;
+			}
+
+			/*  */
+			.date-text {
+				position: relative;
+				background-color: #2dc4b6;
+
+				/*  */
+				& input {
+					width: 100%;
+					padding-right: 2.8rem;
+				}
+
+				/*  */
+				.fa-calendar-days {
+					position: absolute;
+					right: 1.2rem;
+					bottom: 1.1rem;
+					color: #afb4b4;
+				}
+			}
+
+			/*  */
+			#form-couple-input {
+				.input-eye {
+					position: relative;
+					background-color: pink;
+					width: 100%;
+
+					/*  */
+					& input {
+						width: 100%;
+						padding-right: 2.8rem;
+					}
+
+					/*  */
+					.fa-eye {
+						position: absolute;
+						right: 1.2rem;
+						bottom: 1.1rem;
+						color: #afb4b4;
+						font-size: 0.8rem;
+					}
+				}
+			}
+
+			.register-btn {
+				/*  */
+				#register {
+					background-color: #2dc4b6;
+					color: white;
+					width: 100%;
+					margin: 1.5rem 0;
+					padding: 1rem 0;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	/*  */
+	& footer {
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: 500;
+
+		/*  */
+		& span > a {
+			color: #2dc4b6;
+		}
+	}
+
+	/*  */
+	.mobile-footer {
+		padding: 1.5rem 0;
+		/*  */
+		@media screen and (min-width: 1001px) {
+			display: none;
+		}
+	}
+
+	/*  */
+	.other-footer {
+		display: none;
+		/*  */
+		@media screen and (min-width: 1001px) {
+			display: block;
+			padding-bottom: 1.5rem;
+		}
+	}
+}

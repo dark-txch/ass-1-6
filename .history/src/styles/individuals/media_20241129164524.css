@@ -1,0 +1,9 @@
+/* -------------media query  */
+
+	@media screen and (min-width: 1001px) {
+		display: flex;
+		flex-direction: row;
+		min-height: 100vh;
+
+		padding: 0;
+	}

@@ -1,0 +1,49 @@
+/* Media Query for Desktop */
+@media screen and (min-width: 1001px) {
+	main {
+		display: flex;
+		flex-direction: row;
+		min-height: 100vh;
+		padding: 0;
+	}
+
+	#section1-wrapper {
+		min-height: 100vh;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mobile-p {
+		display: none;
+	}
+
+	.other-p {
+		display: block; /* Make visible on larger screens */
+		color: #646767;
+		border: 2px solid red;
+	}
+
+	#form-wrapper {
+		height: 100vh;
+		width: 50%;
+	}
+
+	form {
+		.date-text input,
+		.input-eye input {
+			border: none; /* Explicitly reset for desktop */
+		}
+	}
+
+	.mobile-footer {
+		display: none;
+	}
+
+	.other-footer {
+		display: block;
+		padding-bottom: 1.5rem;
+	}
+}

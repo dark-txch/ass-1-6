@@ -1,0 +1,5 @@
+/* -------------media query for individuals */
+
+@media screen and (min-width: 1001px) {
+	display: flex;
+}

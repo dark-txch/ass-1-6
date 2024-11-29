@@ -1,0 +1,53 @@
+/* -------------media query for individuals */
+@media screen and (min-width: 1001px) {
+	main {
+		display: flex;
+		flex-direction: row;
+		min-height: 100vh;
+
+		padding: 0;
+	}
+
+	#section1-wrapper {
+		min-height: 100vh;
+		width: 50%;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon-section {
+		width: 82%;
+
+		&img {
+			width: 4rem;
+		}
+	}
+
+	.fa-backward {
+		padding-right: 3.5rem;
+	}
+
+	#h1p-wrapper {
+		width: 80%;
+	}
+
+	.mobile-p {
+		display: none;
+	}
+
+	/* not showing-------------------------------- */
+	.other-p {
+		display: block;
+		color: #646767;
+
+		border: 2px solid red;
+	}
+}
+
+	/*  ---------------------------------------------section 2 _form wrapper */
+#form-wrapper {
+	
+}
